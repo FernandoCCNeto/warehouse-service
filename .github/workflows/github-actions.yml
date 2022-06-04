@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         node: [ 12, 14, 16 ]
-    name: Node ${{ matrix.node }} sample
+    name: Run action with nodejs ${{ matrix.node }} version
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
